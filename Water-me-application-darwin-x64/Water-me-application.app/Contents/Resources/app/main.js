@@ -82,7 +82,7 @@ app.on('activate', function () {
 
 // start of code
 
-/*var plants = new Array (
+var plants = new Array (
     'monstera', 
     'bregne', 
     'elefantfot', 
@@ -103,4 +103,4 @@ function search() {
         alert ('its here'); 
     }
 
-}*/
+}

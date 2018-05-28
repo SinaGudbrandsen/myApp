@@ -76,31 +76,3 @@ app.on('activate', function () {
 
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and require them here.
-
-
-
-
-// start of code
-
-/*var plants = new Array (
-    'monstera', 
-    'bregne', 
-    'elefantfot', 
-    'vindusblad',
-); 
-
-var el = document.getElementById('plants'); 
-console.log(plants[0]);  
-
-
-function search() {
-
-    var txt = document.getElementById('addPlantsTextField').value; 
-
-    var index = plants.indexOf(txt);
-
-    if(index == -1){
-        alert ('its here'); 
-    }
-
-}*/
