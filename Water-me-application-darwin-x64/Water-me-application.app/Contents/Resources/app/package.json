@@ -1,0 +1,20 @@
+{
+  "name": "Water-me-application",
+  "version": "0.1.0",
+  "description": "Water me",
+  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SinaGudbrandsen/myApp"
+  },
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-packager . --icon \"app_icons/Icon.icns\" --overwrite"
+  },
+  "author": "Sina Hoelstad Gudbrandsen",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^1.6.7",
+    "electron-packager": "^8.7.0"
+  }
+}
