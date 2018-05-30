@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: "Helvetica Neue", sans-serif;  
+    background: #f7f4e6; 
+    margin: 0 auto; 
+    text-align: center;    
+    font-size: 60pt;
+    font-weight: 600; 
+    color: #f51010; 
+
+}
+
+.header {
+    font-family: 'futura', sans-serif; 
+    font-size: 20pt; 
+    letter-spacing: 4pt; 
+    text-align: center; 
+    padding-top: 15px; 
+}
+
+
+.profile {
+    width: 250px; 
+    padding-top: 30px; 
+}
+
+
+
+.info {
+    margin: 0 auto; 
+    padding-top: 50px; 
+    align-items: center; 
+    width: 500px; 
+    height: 200px; 
+    color: black; 
+    font-weight: 200; 
+    font-size: 15px; 
+    letter-spacing: 1pt; 
+}
+
+.wrapper {
+    display: flex;  
+    justify-content: center; 
+    align-items: flex-start;  
+    
+   
+}
+
+.water {  
+    margin: 20px; 
+    width: 20px; 
+    height: 20px; 
+}
+
+
+.waterInfo {
+    margin: 30px; 
+    height: 200px; 
+    color: black; 
+    font-weight: 500; 
+    font-size: 15px; 
+    letter-spacing: 1pt;
+}
+
+.fertilizer{ 
+    margin: 30px; 
+    height: 300px; 
+    color: black; 
+    font-weight: 500; 
+    font-size: 15px; 
+    letter-spacing: 1pt;
+}
+
