@@ -1,32 +1,96 @@
-// create object containing information on each plant
+// recieve input from user in form 1 and 2
 
-plants = [
-    {name: 'monstera' , water: 2, fertil: 1},
-    {name: 'bregne', water: 2, fertil: 1},
-    {name: 'smaragdpalme', water: 1, fertil: 1}, 
-    {name: 'arekapalme', water: 1, fertil: 1}, 
-]
-
-
-// check if users input exists in objects and open new html if that is the case
-function outputname() {
+function outputwater() {
+    
+    // water input
+    
+    var waterIt = document.getElementById('form2'); 
+    
+    var y = waterIt.elements["water"].value;  
+    
+    console.log(y); 
+    
+    
+// name input 
     
     var plant = document.getElementById('form1'); 
     
     var x = plant.elements["addPlants"].value;    
 
-    for (var i = 0; i < plants.length; i++){
-
-        if (x == plants[i].name){
-
-             console.log('its a match'); 
-         
-             window.open('file:///Users/sinahoelstadgudbrandsen/Documents/App_WaterMe/Nettside/myApp/www/plant.html');
+    console.log(x); 
     
-         }
-        else {
-            console.log('false'); 
-        } 
+    
+// start timer if user input is 1
+    if (y === '1') {
+        
+        
+        var counter = 0; 
+        var timeLeft = 604800; 
+
+            function timeIt(){
+    
+                counter++; 
+                console.log(timeLeft - counter); 
+                
+        var tbl = document.getElementById('headerPlantTwo').innerHTML = x;                       
     }
-}
+
+    setInterval(timeIt, 1000); 
+    
+    }
+    
+// start timer if user input is 2     
+     if (y === '2') {
+        
+        
+        var counter = 0; 
+        var timeLeft = 302400; 
+
+            function timeIt(){
+    
+                counter++; 
+                console.log(timeLeft - counter); 
+    }
+                
+    setInterval(timeIt, 1000); 
+    
+    } 
+    
+ }   
+
+
+    // add no display class to wrapper
+
+    var el = document.querySelector('.add'); 
+        
+    el.addEventListener('click', doSomething); 
+        
+    function doSomething (event){
+        
+        var addClass = document.querySelector('.wrapper');
+        addClass.classList.add('hidden');
+        
+        var addClassTwo = document.querySelector('.add'); 
+        addClassTwo.classList.add('hidden');
+        
+// add new classes to plant information
+        
+        var addclassWrapper = document.querySelector('.wrapperPlantNoDisplay');
+        addclassWrapper.classList.remove('wrapperPlantNoDisplay');
+        addclassWrapper.classList.add('wrapperPlant');
+        
+        var addClassHeader = document.querySelector('.headerPlantNoDisplay');
+        addClassHeader.classList.remove('headerPlantNoDisplay');
+        addClassHeader.classList.add('headerPlant');
+        
+        var addClassInfoPlant = document.querySelector('.infoPlantNoDisplay');
+        addClassInfoPlant.classList.remove('infoPlantNoDisplay');
+        addClassInfoPlant.classList.add('infoPlant');
+        
+        var addClassAddNew = document.querySelector('.addNewNoDisplay');
+        addClassAddNew.classList.remove('addNewNoDisplay');
+        addClassAddNew.classList.add('addNew');
+        
+    }  
+
 
