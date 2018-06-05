@@ -28,9 +28,12 @@
                         </form>
 
                 <div class="numberOne">
-        
-                        <p>1 gang i uken</p>   
+
+                        <p class="oneTime">1</p> 
+                        <p>gang i uken</p>   
                 </div>
+
+                <div class="timeToWaterNone"></div>
 
                 <p class="startWateringOne" onclick="outputname()">Start vanningen</p>
         </div> 
@@ -43,8 +46,13 @@
                                 <input  id ='enter' class="addPlantsTextField" type="text" name="nametwo"><br>  
                         </form>
                 <div class="numberTwo">
-            <p>2 ganger i uken</p>
+            <p class="twoTimes">2</p><p>ganger i uken</p>
         </div>
+        <div class="timeToWaterTwoNone">
+                <p class="waterTimeTwo"></p>
+        </div>
+        
+
         <p class="startWateringTwo" onclick="outputnametwo()">Start vanningen</p>
     </div>
 
@@ -56,27 +64,15 @@
                     <input  id ='enter1' class="addPlantsTextField" type="text" name="namethree"><br>  
         </form>
         <div class="numberThree">
-            <p>Annenhver uke</p>
+            <p class="everyOther">Annenhver uke</p>
         </div>
+        <div class="timeToWaterThreeNone"></div>
+
         <p class="startWateringThree" onclick='outputnamethree()'>Start vanningen</p>
+
+        </div>    
     </div>    
-
-
-    </div>    
-            
-    <!-- Plant information -->
-        
-    <div class="wrapperPlantNoDisplay">
-        
-            <p class='headerPlantNoDisplay'  id='headerPlantTwo'></p>
-        
-            <p class="infoPlantNoDisplay">Du vil få varsel da det er på tide å vanne planten din igjen</p>           
-    </div>
-
 </div>
-    <div class="addNewNoDisplay">
-            <img src="1x/Artboard%201.png" alt="Add a new plant">
-    </div>
 
         <script src="main.js"></script>
         <script src="script.js"></script>

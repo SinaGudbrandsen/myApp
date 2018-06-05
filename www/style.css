@@ -144,76 +144,8 @@ body {
     margin: 0 auto;  
 }
 
-/* Add new plant button to appear from no display*/
-
-.addNewNoDisplay img {
-    width: 35px;      
-}
-.addNewNoDisplay{
-    display: none; 
-}
-
-.addNew{
-    width: 35px; 
-    margin: 0 auto; 
-
-}
-.addNew img{
-    width: 35px; 
-    margin: 0 auto; 
-}
-
-.wrapperPlant{
-    display: flex; 
-    flex-direction: column; 
-    margin: 0 auto; 
-    width: 350px; 
-    height: 300px; 
-    border: 2px solid black; 
-    border-radius: 20px; 
-}
-
-.wrapperPlantNoDisplay { 
-    display: none; 
-}
-
-.wrapperPlantPos2 {
-    display: flex; 
-    flex-direction: column; 
-    margin: 50px auto; 
-    width: 350px; 
-    height: 300px; 
-    border: 2px solid black; 
-    border-radius: 20px; 
-}
-
-.headerPlant {
-    margin: 50px auto; 
-    align-items: center; 
-    font-family: 'futura', sans-serif; 
-    font-size: 15pt; 
-    letter-spacing: 4pt; 
-    text-align: center; 
-}
-
-.headerPlantNoDisplay{
-    display: none; 
-}
-
-.infoPlant {
-    margin: 50px auto; 
-    align-items: center; 
-    font-family: 'futura', sans-serif; 
-    font-size: 10pt; 
-    letter-spacing: 1pt; 
-    text-align: center; 
-}
-.infoPlantNoDisplay {
-    display: none; 
-}
-
-
 .wrapperCircleOne {
+    position: relative; 
     margin: 0 50px 0 50px; 
     width: 200px; 
     height: 400px;
@@ -221,12 +153,14 @@ body {
 }
 
 .wrapperCircleTwo {
+    position: relative; 
     margin: 0 50px 0 50px; 
     width: 200px; 
     height: 400px;
     opacity: 0;
 }
 .wrapperCircleThree{
+    position: relative; 
     margin: 0 50px 0 50px; 
     width: 200px; 
     height: 400px; 
@@ -240,8 +174,6 @@ body {
     height: 150px; 
     border: 1px solid black; 
     border-radius: 50%; 
- 
-    
 }
 .numberTwo {
     margin: 0 auto; 
@@ -249,10 +181,7 @@ body {
     width: 150px; 
     height: 150px; 
     border: 1px solid black; 
-    border-radius: 50%;
-     
-
-    
+    border-radius: 50%; 
 }
 .numberThree {
     margin:  0 auto;
@@ -267,7 +196,6 @@ body {
     font-size: 15px; 
     text-decoration: underline; 
     letter-spacing: 1.5px;  
-    
 }
 
 .startWateringTwo{
@@ -281,6 +209,17 @@ body {
     text-decoration: underline;
     letter-spacing: 1.5px; 
 }
+.startWateringOneOff {
+    display: none; 
+}
+
+.startWateringTwoOff {
+    display: none; 
+}
+
+.startWateringThreeOff {
+    display: none; 
+}
 
 .titleOne {
      font-size: 15px; 
@@ -292,4 +231,44 @@ body {
 
 .titleThree {
     font-size: 15px; 
+}
+
+.timeToWater , .timeToWaterTwo , .timeToWaterThree {
+    position: absolute; 
+    margin: -160px 16px; 
+    width: 170px; 
+    height: 170px; 
+    border: 3px solid black; 
+    color: darkcyan;
+    border-radius: 50%; 
+}
+
+.timeToWaterNone {
+    display: none; 
+}
+.timeToWaterTwoNone{
+    display: none; 
+}
+.timeToWaterThreeNone{
+    display: none; 
+}
+
+.waterTimeTwo{
+    font-size: 20px; 
+    text-decoration: underline; 
+}
+
+.oneTime {
+    margin: 0 auto; 
+    font-size: 80px; 
+}
+
+.twoTimes {
+    margin: 0 auto; 
+    font-size: 80px; 
+}
+
+.everyOther {
+    margin: 10px auto; 
+    font-size: 30px;
 }
