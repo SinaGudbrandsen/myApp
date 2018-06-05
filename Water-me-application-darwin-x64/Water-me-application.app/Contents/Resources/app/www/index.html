@@ -1,0 +1,73 @@
+<!Doctype html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="style.css">
+     <title>My App</title>
+
+</head>
+
+<body>
+
+    <h1 class="header">WATER ME</h1>
+    
+<div class='container'>
+    <div class="wrapper">
+        
+        
+        <p class="namePlant">Hva heter planten din?</p>
+
+                <div class="divPlants">
+
+                        <form id='form1'>
+                                        <br>
+                                         <input  id ='enter' class="addPlantsTextField" type="text" name="addPlants"><br>  
+                             </form>
+
+                               <!--  <button id='search'  onclick ='outputname()'>search</button>-->
+
+                                 <p id='demo'></p> 
+            </div>
+
+            <p class="waterTimes">Hvor mange ganger i uken skal den vannes?</p>
+
+            <div class="formArea">
+                 <form id='form2'>
+                                        <br>
+                                         <input  id ='enter' class="waterAmount2" type="text" name="water"><br>  
+                             </form>
+
+                                <!-- <button id='search'  onclick ='outputwater()'>search</button>-->
+
+                                 <p id='demo'></p> 
+            </div>
+
+            <p class="add" onclick='outputwater()' onclick='outputname()'>Add your plant</p>
+    </div>    
+            
+    <!-- Plant information -->
+        
+    <div class="wrapperPlantNoDisplay">
+        
+            <p class='headerPlantNoDisplay'  id='headerPlantTwo'></p>
+        
+            <p class="infoPlantNoDisplay">Du vil få varsel da det er på tide å vanne planten din igjen</p>           
+    </div>
+
+</div>
+    <div class="addNewNoDisplay">
+            <img src="1x/Artboard%201.png" alt="Add a new plant">
+    </div>
+    
+   <!-- <p class="add" onclick='outputwater()' onclick='outputname()'>Add your plant</p>-->
+
+
+        <script src="main.js"></script>
+        <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -57,6 +57,8 @@ function outputwater() {
     } 
     
  }   
+
+
     // add no display class to wrapper
 
     var el = document.querySelector('.add'); 

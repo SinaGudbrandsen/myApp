@@ -1,5 +1,5 @@
 {
-  "name": "Water-me-application",
+  "name": "Watermeapplication",
   "version": "0.1.0",
   "description": "Water me",
   "main": "main.js", 
@@ -8,7 +8,7 @@
     "url": "https://github.com/SinaGudbrandsen/myApp"
   },
   "scripts": {
-    "start": "electron .",
+    "start": "electron main.js",
     "pack": "electron-packager . --icon \"app_icons/Icon.icns\" --overwrite"
   },
   "author": "Sina Hoelstad Gudbrandsen",
