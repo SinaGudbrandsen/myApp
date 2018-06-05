@@ -15,37 +15,53 @@
     <h1 class="header">WATER ME</h1>
     
 <div class='container'>
-    <div class="wrapper">
-        
-        
-        <p class="namePlant">Hva heter planten din?</p>
+    
+    
+<div class="wrapper">
 
-                <div class="divPlants">
+        <div class="wrapperCircleOne"> 
 
+                <p class="titleOne"></p>
                         <form id='form1'>
-                                        <br>
-                                         <input  id ='enter' class="addPlantsTextField" type="text" name="addPlants"><br>  
-                             </form>
+                                <br>
+                                <input id ='enter' class="addPlantsTextField" type="text" name="addNameOne"><br>  
+                        </form>
 
-                               <!--  <button id='search'  onclick ='outputname()'>search</button>-->
+                <div class="numberOne">
+        
+                        <p>1 gang i uken</p>   
+                </div>
 
-                                 <p id='demo'></p> 
-            </div>
+                <p class="startWateringOne" onclick="outputname()">Start vanningen</p>
+        </div> 
 
-            <p class="waterTimes">Hvor mange ganger i uken skal den vannes?</p>
+        
+    <div class="wrapperCircleTwo">
+                <p class="titleTwo"> </p>
+                         <form id='form2'>
+                                <br>
+                                <input  id ='enter' class="addPlantsTextField" type="text" name="nametwo"><br>  
+                        </form>
+                <div class="numberTwo">
+            <p>2 ganger i uken</p>
+        </div>
+        <p class="startWateringTwo" onclick="outputnametwo()">Start vanningen</p>
+    </div>
 
-            <div class="formArea">
-                 <form id='form2'>
-                                        <br>
-                                         <input  id ='enter' class="waterAmount2" type="text" name="water"><br>  
-                             </form>
+     
+    <div class="wrapperCircleThree"> 
+                <p class="titleThree"> </p>
+         <form id='form3'>
+                    <br>
+                    <input  id ='enter1' class="addPlantsTextField" type="text" name="namethree"><br>  
+        </form>
+        <div class="numberThree">
+            <p>Annenhver uke</p>
+        </div>
+        <p class="startWateringThree" onclick='outputnamethree()'>Start vanningen</p>
+    </div>    
 
-                                <!-- <button id='search'  onclick ='outputwater()'>search</button>-->
 
-                                 <p id='demo'></p> 
-            </div>
-
-            <p class="add" onclick='outputwater()' onclick='outputname()'>Add your plant</p>
     </div>    
             
     <!-- Plant information -->
@@ -61,9 +77,6 @@
     <div class="addNewNoDisplay">
             <img src="1x/Artboard%201.png" alt="Add a new plant">
     </div>
-    
-   <!-- <p class="add" onclick='outputwater()' onclick='outputname()'>Add your plant</p>-->
-
 
         <script src="main.js"></script>
         <script src="script.js"></script>

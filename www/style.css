@@ -16,11 +16,6 @@ body {
     display: flex; 
     flex-direction: row; 
 }
-
-.waterTimes , .namePlant {
-    font-size: 15px; 
-    opacity: 0; 
-}
 .header {
     font-family: 'futura', sans-serif; 
     font-size: 40pt; 
@@ -61,7 +56,7 @@ body {
     margin: 60px auto; 
     font-size: 15px; 
     color: black; 
-    width: 350px; 
+    width: 100px; 
     height: 70px; 
     border-bottom: 2px solid black; 
     opacity: 0; 
@@ -95,65 +90,16 @@ body {
         
     }
 }
-
-/* styling input field*/
-
-.addPlantsTextField {
-   
-    background-image: url(Pic/search.svg); 
-    background-size: 20px 20px; 
-    background-position: 360px 8px; 
-   background-repeat: no-repeat;
-   padding-top: 5px; 
-   border: none; 
-   background-color: #f7f4e6; 
-   outline: none; 
-   width: 300px;
-   height: 30px; 
-   font-size: 15px; 
-   padding-left: 40px; 
-  
-}
-
-.formArea {
-    margin: 0 auto; 
-    font-size: 15px; 
-    color: black; 
-    width: 350px; 
-    height: 70px; 
-    border-bottom: 2px solid black; 
-    opacity: 0;
-    
-}
-.waterAmount2{
-      
-    background-image: url(Pic/search.svg); 
-    background-size: 20px 20px; 
-    background-position: 360px 8px; 
-   background-repeat: no-repeat;
-   padding-top: 5px; 
-   border: none; 
-   background-color: #f7f4e6; 
-   outline: none; 
-   width: 300px;
-   height: 30px; 
-   font-size: 15px; 
-   padding-left: 40px; 
-}
-.divPlants p {
-    padding-top: 5px; 
-    
-}
 /* Animating the input field*/
 
-.formArea , .namePlant , .waterTimes{
+.wrapperCircleOne , .wrapperCircleTwo, .wrapperCircleThree{
     animation-name: addPlantsButton;
     animation-fill-mode: forwards;
     animation-duration: 1.5s; 
     animation-delay: 3s; 
 }
 
-@keyframes formArea{
+@keyframes  wrapperCircleOne{
 
    from {
         
@@ -166,7 +112,7 @@ body {
     }
 }
 
-@keyframes namePlant {
+@keyframes wrapperCircleTwo{
 
     from {
          
@@ -179,7 +125,7 @@ body {
      }
  }
 
- @keyframes waterTimes {
+ @keyframes  wrapperCircleThree {
 
     from {
          
@@ -193,19 +139,9 @@ body {
  }
 .wrapper {
     display: flex; 
-    flex-direction: column; 
-    margin: 0 auto; 
-    width: 400px;  
-}
-
-.wrapper hidden {
-    
-    display: none; 
-}
-
-.hidden {
-    
-    display: none; 
+    flex-direction: row; 
+    justify-content: center; 
+    margin: 0 auto;  
 }
 
 /* Add new plant button to appear from no display*/
@@ -274,4 +210,86 @@ body {
 }
 .infoPlantNoDisplay {
     display: none; 
+}
+
+
+.wrapperCircleOne {
+    margin: 0 50px 0 50px; 
+    width: 200px; 
+    height: 400px;
+    opacity: 0; 
+}
+
+.wrapperCircleTwo {
+    margin: 0 50px 0 50px; 
+    width: 200px; 
+    height: 400px;
+    opacity: 0;
+}
+.wrapperCircleThree{
+    margin: 0 50px 0 50px; 
+    width: 200px; 
+    height: 400px; 
+    opacity: 0; 
+}
+
+.numberOne {
+    margin: 0 auto; 
+    font-size: 10px; 
+    width: 150px; 
+    height: 150px; 
+    border: 1px solid black; 
+    border-radius: 50%; 
+ 
+    
+}
+.numberTwo {
+    margin: 0 auto; 
+    font-size: 10px; 
+    width: 150px; 
+    height: 150px; 
+    border: 1px solid black; 
+    border-radius: 50%;
+     
+
+    
+}
+.numberThree {
+    margin:  0 auto;
+    font-size: 10px; 
+    width: 150px; 
+    height: 150px; 
+    border: 1px solid black; 
+    border-radius: 50%;
+   
+}
+.startWateringOne{
+    font-size: 15px; 
+    text-decoration: underline; 
+    letter-spacing: 1.5px;  
+    
+}
+
+.startWateringTwo{
+    font-size: 15px; 
+    text-decoration: underline;
+    letter-spacing: 1.5px; 
+}
+
+.startWateringThree{
+    font-size: 15px; 
+    text-decoration: underline;
+    letter-spacing: 1.5px; 
+}
+
+.titleOne {
+     font-size: 15px; 
+}
+
+.titleTwo {
+    font-size: 15px; 
+}
+
+.titleThree {
+    font-size: 15px; 
 }

@@ -1,136 +1,77 @@
-// recieve input from user in form 1 and 2
+// function start watering on circle number one
 
-function outputwater() {
+function outputname() {
     
-    // water input
+    // name input
     
-    var waterIt = document.getElementById('form2'); 
+    var waterIt = document.getElementById('form1'); 
     
-    var y = waterIt.elements["water"].value;  
+    var y = waterIt.elements['addNameOne'].value;  
     
     console.log(y); 
-    
-    
-// name input 
-    
-    var plant = document.getElementById('form1'); 
-    
-    var x = plant.elements["addPlants"].value;    
 
-    console.log(x); 
+    document.querySelector('.titleOne').innerHTML = y; 
     
     
-// start timer if user input is 1
-    if (y === '1') {
-        
-        
-        var counter = 0; 
-        var timeLeft = 604800; 
+    var counter = 0; 
+    var timeLeft = 604800; 
 
             function timeIt(){
     
                 counter++; 
-                console.log(timeLeft - counter); 
-                
-        var tbl = document.getElementById('headerPlantTwo').innerHTML = x;                       
+                console.log(timeLeft - counter);   
+                      
     }
-
     setInterval(timeIt, 1000); 
+} 
     
-    }
-    
-// start timer if user input is 2     
-     if (y === '2') {
-        
-        
-        var counter = 0; 
-        var timeLeft = 302400; 
+// function start watering on circle number two
 
-            function timeIt(){
+function outputnametwo() {
+
+    //name input
+
+    var name = document.getElementById('form2'); 
     
-                counter++; 
-                console.log(timeLeft - counter); 
+    var y = name.elements["nametwo"].value;  
+    
+    console.log(y); 
+
+    document.querySelector('.titleTwo').innerHTML = y;
+
+    var counter = 0; 
+    var timeLeft = 1209600; 
+
+        function timeIt(){
+
+            counter++; 
+            console.log(timeLeft - counter); 
     }
-                
+            
     setInterval(timeIt, 1000); 
-    
-    } 
-    
- }   
+
+}   
 
 
-    // add no display class to wrapper
+function outputnamethree() {
 
-    var el = document.querySelector('.add'); 
-        
-    el.addEventListener('click', doSomething); 
-        
-    function doSomething (event){
-        
-        var addClass = document.querySelector('.wrapper');
-        addClass.classList.add('hidden');
-        
-        var addClassTwo = document.querySelector('.add'); 
-        addClassTwo.classList.add('hidden');
-        
-// add new classes to plant information
-        
-        var addclassWrapper = document.querySelector('.wrapperPlantNoDisplay');
-        addclassWrapper.classList.remove('wrapperPlantNoDisplay');
-        addclassWrapper.classList.add('wrapperPlant');
-        
-        var addClassHeader = document.querySelector('.headerPlantNoDisplay');
-        addClassHeader.classList.remove('headerPlantNoDisplay');
-        addClassHeader.classList.add('headerPlant');
-        
-        var addClassInfoPlant = document.querySelector('.infoPlantNoDisplay');
-        addClassInfoPlant.classList.remove('infoPlantNoDisplay');
-        addClassInfoPlant.classList.add('infoPlant');
-        
-        var addClassAddNew = document.querySelector('.addNewNoDisplay');
-        addClassAddNew.classList.remove('addNewNoDisplay');
-        addClassAddNew.classList.add('addNew');
-        
-    }  
-// open inout form
+    var namethree = document.getElementById('form3'); 
 
+    var t = namethree.elements["namethree"].value; 
 
-    
-// open new 
-var anotherOne = document.querySelector('.addNewNoDisplay');
+    console.log(t); 
 
-anotherOne.addEventListener('click', openNewEntry); 
+    document.querySelector('.titleThree').innerHTML = t;
 
-function openNewEntry(event) {
+    var counter = 0; 
+    var timeLeft = 302400; 
 
-    console.log("fgbdfv");
+        function timeIt(){
 
-    var removeClass = document.querySelector('.wrapper');
-    removeClass.classList.remove('hidden');
-
-    var addClassTwo = document.querySelector('.add'); 
-    addClassTwo.classList.remove('hidden');
-
-    var newPosition = document.querySelector('.wrapperPlant');
-    newPosition.classList.remove('wrapperPlant');
-    newPosition.classList.add('wrapperPlantPos2');
-    
-    var div = document.querySelector('.wrapper'),
-    clone = div.cloneNode(true); // true means clone all childNodes and all event handlers
-    clone.id = "some_id";
-    document.body.appendChild(clone);
+            counter++; 
+            console.log(timeLeft - counter); 
+    }
+            
+    setInterval(timeIt, 1000); 
 }
-
-/*var anotherOne = document.querySelector('.addNewNoDisplay');
-
-anotherOne.addEventListener('click', openNewEntry); 
-
-function openNewEntry(event) {
-
-    var div = document.querySelector('.wrapperPlant'),
-    clone = div.cloneNode(true); // true means clone all childNodes and all event handlers
-    clone.id = "some_id";
-    document.body.appendChild(clone);
-}
-*/
 
