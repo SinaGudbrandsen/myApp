@@ -92,5 +92,45 @@ function outputwater() {
         addClassAddNew.classList.add('addNew');
         
     }  
+// open inout form
 
+
+    
+// open new 
+var anotherOne = document.querySelector('.addNewNoDisplay');
+
+anotherOne.addEventListener('click', openNewEntry); 
+
+function openNewEntry(event) {
+
+    console.log("fgbdfv");
+
+    var removeClass = document.querySelector('.wrapper');
+    removeClass.classList.remove('hidden');
+
+    var addClassTwo = document.querySelector('.add'); 
+    addClassTwo.classList.remove('hidden');
+
+    var newPosition = document.querySelector('.wrapperPlant');
+    newPosition.classList.remove('wrapperPlant');
+    newPosition.classList.add('wrapperPlantPos2');
+    
+    var div = document.querySelector('.wrapper'),
+    clone = div.cloneNode(true); // true means clone all childNodes and all event handlers
+    clone.id = "some_id";
+    document.body.appendChild(clone);
+}
+
+/*var anotherOne = document.querySelector('.addNewNoDisplay');
+
+anotherOne.addEventListener('click', openNewEntry); 
+
+function openNewEntry(event) {
+
+    var div = document.querySelector('.wrapperPlant'),
+    clone = div.cloneNode(true); // true means clone all childNodes and all event handlers
+    clone.id = "some_id";
+    document.body.appendChild(clone);
+}
+*/
 

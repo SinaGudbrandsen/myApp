@@ -10,254 +10,67 @@ body {
     font-size: 60pt;
     font-weight: 600; 
     color: #f51010; 
+
 }
 
-.waterTimes , .namePlant {
-    font-size: 15px; 
-    opacity: 0; 
-}
 .header {
     font-family: 'futura', sans-serif; 
-    font-size: 40pt; 
+    font-size: 20pt; 
     letter-spacing: 4pt; 
     text-align: center; 
-    padding-top: 300px; 
-    margin-bottom: 90px;
-}
-
-/* Animating the header*/
-
-.header {
-    animation-name: headerToTop; 
-    animation-duration: 1.5s; 
-    animation-fill-mode: forwards; 
-    animation-delay: 2s; 
-    animation-iteration-count: 1;
-}
-
-@keyframes headerToTop{
-    from {
-        text-align: center; 
-        padding-top: 300px;
-    }
-    
-    to {
-      text-align: center; 
-      padding-top: 15px; 
-      font-size: 20pt; 
-    }
-  }
-
-.divPlants { 
-    margin: 100px auto; 
-    font-size: 15px; 
-    color: black; 
-    width: 450px; 
-    height: 70px; 
-    border-bottom: 2px solid black; 
-    opacity: 0; 
-}
-.divPlants hidden{
-     display: none;
+    padding-top: 15px; 
 }
 
 
-.divPlants p {
-    padding-top: 5px; 
-}
-/* Animating the input field*/
-
-.divPlants{
-    animation-name: addPlantsButton;
-    animation-fill-mode: forwards;
-    animation-duration: 1.5s; 
-    animation-delay: 3s; 
+.profile {
+    width: 250px; 
+    padding-top: 30px; 
 }
 
-@keyframes addPlantsButton {
 
-   from {
-        
-        opacity: 0;
-    }
-    to {
-         
-        opacity: 1;
-        
-    }
-}
 
-/* styling input field*/
-
-.addPlantsTextField {
-   
-    background-image: url(Pic/search.svg); 
-    background-size: 20px 20px; 
-    background-position: 360px 8px; 
-   background-repeat: no-repeat;
-   padding-top: 5px; 
-   border: none; 
-   background-color: #f7f4e6; 
-   outline: none; 
-   width: 400px;
-   height: 30px; 
-   font-size: 15px; 
-   padding-left: 40px; 
-  
-}
-
-.formArea {
+.info {
     margin: 0 auto; 
-    font-size: 15px; 
-    color: black; 
-    width: 450px; 
-    height: 70px; 
-    border-bottom: 2px solid black; 
-    opacity: 0;
-    
-}
-.waterAmount2{
-      
-    background-image: url(Pic/search.svg); 
-    background-size: 20px 20px; 
-    background-position: 360px 8px; 
-   background-repeat: no-repeat;
-   padding-top: 5px; 
-   border: none; 
-   background-color: #f7f4e6; 
-   outline: none; 
-   width: 400px;
-   height: 30px; 
-   font-size: 15px; 
-   padding-left: 40px; 
-}
-.divPlants p {
-    padding-top: 5px; 
-    
-}
-/* Animating the input field*/
-
-.formArea , .namePlant , .waterTimes{
-    animation-name: addPlantsButton;
-    animation-fill-mode: forwards;
-    animation-duration: 1.5s; 
-    animation-delay: 3s; 
-}
-
-@keyframes formArea {
-
-   from {
-        
-        opacity: 0;
-    }
-    to {
-         
-        opacity: 1;
-        
-    }
-}
-
-@keyframes namePlant{
-
-    from {
-         
-         opacity: 0;
-     }
-     to {
-          
-         opacity: 1;
-         
-     }
- }
- 
- @keyframes waterTimes{
-
-    from {
-         
-         opacity: 0;
-     }
-     to {
-          
-         opacity: 1;
-         
-     }
- }
-.wrapper .hidden {
-    
-    display: none; 
-}
-
-.wrapper hidden {
-    
-    display: none; 
-}
-
-.hidden {
-    
-    display: none; 
-}
-
-/* Add new plant button to appear from no display*/
-
-.addNewNoDisplay img {
-    width: 35px;      
-}
-.addNewNoDisplay{
-    display: none; 
-}
-
-.addNew{
-    width: 35px; 
-    margin: 0 auto; 
-
-}
-.addNew img{
-    width: 35px; 
-    margin: 0 auto; 
-}
-
-.wrapperPlant{
-    display: flex; 
-    flex-direction: column; 
-    margin: 150px auto 70px  auto; 
-    width: 350px; 
-    height: 300px; 
-    border: 2px solid black; 
-    border-radius: 20px; 
-}
-
-.wrapperPlantNoDisplay {
-    
-    display: none; 
-}
-
-.headerPlant {
-    margin: 50px auto; 
+    padding-top: 50px; 
     align-items: center; 
-    font-family: 'futura', sans-serif; 
-    font-size: 15pt; 
-    letter-spacing: 4pt; 
-    text-align: center; 
-}
-
-.headerPlantNoDisplay{
-    
-    display: none; 
-}
-
-
-.infoPlant {
-    margin: 50px auto; 
-    align-items: center; 
-    font-family: 'futura', sans-serif; 
-    font-size: 10pt; 
+    width: 500px; 
+    height: 200px; 
+    color: black; 
+    font-weight: 200; 
+    font-size: 15px; 
     letter-spacing: 1pt; 
-    text-align: center; 
 }
 
-.infoPlantNoDisplay {
+.wrapper {
+    display: flex;  
+    justify-content: center; 
+    align-items: flex-start;  
     
-    display: none; 
+   
 }
 
+.water {  
+    margin: 20px; 
+    width: 20px; 
+    height: 20px; 
+}
+
+
+.waterInfo {
+    margin: 30px; 
+    height: 200px; 
+    color: black; 
+    font-weight: 500; 
+    font-size: 15px; 
+    letter-spacing: 1pt;
+}
+
+.fertilizer{ 
+    margin: 30px; 
+    height: 300px; 
+    color: black; 
+    font-weight: 500; 
+    font-size: 15px; 
+    letter-spacing: 1pt;
+}
 
