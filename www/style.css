@@ -4,33 +4,60 @@
 
 body {
     font-family: "Helvetica Neue", sans-serif;  
-    background: #f7f4e6; 
+    background: #fcfbf7; 
     margin: 0 auto; 
     text-align: center;    
     font-size: 60pt;
     font-weight: 600; 
-    color: #f51010; 
+    color: #84A793; 
 }
 
 .container {
     display: flex; 
     flex-direction: row; 
+    height: 400px; 
 }
 .header {
     font-family: 'futura', sans-serif; 
+    color: #84A793;
     font-size: 40pt; 
     letter-spacing: 4pt; 
     text-align: center; 
     padding-top: 300px; 
-    margin-bottom: 90px;
+    margin-bottom: 50px;
+}
+.infoHeader {
+
+    font-size: 15px; 
+    font-weight: 400; 
+    text-decoration: underline; 
+    padding-bottom: 10px; 
+    letter-spacing: 4px; 
+    font-style: italic; 
+    opacity: 0; 
+
+    animation-name: infoHeader; 
+    animation-duration: 1.5s; 
+    animation-fill-mode: forwards; 
+    animation-delay: 2s; 
+    animation-iteration-count: 1;
 }
 
-.add {
-    font-size: 30px;
-    padding-top: 50px; 
-}
+@keyframes infoHeader{
+
+    from {
+        opacity: 0; 
+        text-align: center; 
+    }
+    to {
+        opacity: 1;
+        text-align: center; 
+          
+    }
+  }
 
 input {
+    outline: none; 
     border: none; 
     border-bottom: 2px solid black; 
     background: none; 
@@ -44,6 +71,7 @@ input {
     text-align: center;
     cursor: pointer; 
 }
+
 
 .addPlantsTextFieldOff{
     display: none;
@@ -147,43 +175,57 @@ input {
 }
 
 .wrapperCircleOne {
+    color: #fff;
     position: relative; 
-    margin: 0 50px 0 50px; 
+    margin: 0 75px 0 75px; 
     width: 200px; 
-    height: 300px;
-    opacity: 0; 
+    height: 200px;
+    opacity: 0;         
 }
 
 .wrapperCircleTwo {
+    color: #9DCCCF;
     position: relative; 
-    margin: 0 50px 0 50px; 
+    margin: 0 75px 0 75px; 
     width: 200px; 
     height: 300px;
     opacity: 0;
 }
 .wrapperCircleThree{
+    color:#F2D697;
     position: relative; 
-    margin: 0 50px 0 50px; 
+    margin: 0 75px 0 75px; 
     width: 200px; 
-    height: 300px; 
+    height: 200px; 
     opacity: 0; 
 }
 
 .numberOne {
     margin: 0 auto; 
-    font-size: 10px; 
+    font-size: 15px; 
     width: 150px; 
     height: 150px; 
-    border: 1px solid black; 
+    border: 1px solid rgb(19, 7, 7);
+    border-color:#DE8180; 
     border-radius: 50%; 
+    background-color: #DE8180;
+}
+.numberOne p {
+    margin: 2px auto; 
 }
 .numberTwo {
+    color: #fff; 
     margin: 0 auto; 
-    font-size: 10px; 
+    font-size: 15px; 
     width: 150px; 
     height: 150px; 
-    border: 1px solid black; 
+    border: 1px solid black;
+    border-color:  #9DCCCF;
     border-radius: 50%; 
+    background-color: #9DCCCF;
+}
+.numberTwo p {
+    margin: 2px auto; 
 }
 .numberThree {
     margin:  0 auto;
@@ -191,10 +233,13 @@ input {
     width: 150px; 
     height: 150px; 
     border: 1px solid black; 
+    border-color: #F2D697; 
     border-radius: 50%;
+    background-color: #F2D697;
    
 }
 .startWateringOne{
+    color: #DE8180;
     font-size: 25px; 
     text-decoration: underline; 
     letter-spacing: 1.5px;  
@@ -232,27 +277,49 @@ input {
 }
 
 .titleOne {
+    color:#DE8180;
      font-size: 25px; 
+     margin: 50px auto; 
 }
 
-.titleTwo {
+.titleTwo { 
     font-size: 25px; 
+    margin: 50px auto; 
 }
 
 .titleThree {
-    font-size: 25px;  
+    font-size: 25px; 
+    margin: 50px auto;  
 }
 
-.timeToWater , .timeToWaterTwo , .timeToWaterThree {
+.timeToWater {
     position: absolute; 
     margin: -160px 16px; 
     width: 170px; 
     height: 170px; 
     border: 3px solid black; 
-    color: darkcyan;
+    border-color: #DE8180;
     border-radius: 50%; 
 }
 
+.timeToWaterTwo{ 
+    position: absolute; 
+    margin: -160px 16px; 
+    width: 170px; 
+    height: 170px; 
+    border: 3px solid black; 
+    border-color: #9DCCCF;
+    border-radius: 50%;
+}
+.timeToWaterThree {
+    position: absolute; 
+    margin: -160px 16px; 
+    width: 170px; 
+    height: 170px; 
+    border: 3px solid black; 
+    border-color: #F2D697;
+    border-radius: 50%;
+}
 .timeToWaterNone {
     display: none; 
 }
@@ -274,17 +341,20 @@ input {
 }
 
 .twoTimes {
+    color: #fff;
     margin: 0 auto; 
     font-size: 80px; 
 }
 
 .everyOther {
+    color: #fff; 
     margin: 40px auto; 
     font-size: 27px;
 }
 
 .form1 {
     display: none; 
+    color: #DE8180; 
 }
 
 #timeToWaterTextThree{
