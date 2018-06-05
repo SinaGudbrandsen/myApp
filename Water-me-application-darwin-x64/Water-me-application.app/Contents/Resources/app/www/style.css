@@ -279,3 +279,8 @@ input {
     display: none; 
 
 }
+
+#timeToWaterTextThree{
+    font-size: 20px; 
+    text-decoration: underline; 
+}

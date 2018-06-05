@@ -24,14 +24,14 @@ function createWindow() {
         resizable: false
     })
 
-    /* add Tray icon  
-    var tray = new Tray('Pic/search.png');
-    tray.setTitle('hi');
+   /* //add Tray icon  
+    var tray = new Tray();
+    tray.setTitle('hi');*/
 
     ipcMain.on('update-score', function(event, arg){
 
         tray.setTitle(arg);
-    }); */
+    }); 
 
     // and load the index.html of the app.
     win.loadURL(url.format({

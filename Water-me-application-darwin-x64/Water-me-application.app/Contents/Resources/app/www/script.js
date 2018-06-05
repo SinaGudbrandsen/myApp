@@ -119,6 +119,7 @@ function outputnamethree() {
 
             counterThree++; 
             console.log(timeLeftThree - counterThree); 
+            
 
     // if timeleft hit 0, call for counter to start again. Give circle new class
             if (counterThree == timeLeftThree){
@@ -130,54 +131,52 @@ function outputnamethree() {
                     addclassWrapper.classList.add('timeToWaterThree');
 
             }
-    }
+        }
             
     setInterval(timeIt, 1000); 
 
-
 // Run a tester for 10 seconds to see if timer and class change works
 
-    if (t === 'test'){
+    if (t == 'test') {
 
-        var counterTest = 0; 
-        var timeLeftTest = 10; 
+        var counter = 0; 
+        var timeLeftTest = 5;
     
-            function timeIt(){
-    
-                counterTest++; 
-                console.log(timeLeftTest - counterTest); 
+            function timeItTest (){
+                counter++; 
+                console.log(timeLeftTest - counter); 
 
                 // if timeleft hit 0, call for counter to start again. Give circle new class
-                if (counterTest ==  timeLeftTest){
+                if (counter ==  timeLeftTest){
 
-                    counterTest = 0; 
+                    counter = 0; 
+
+                    let myNotification = new Notification('Title', {
+                        body: 'Nå er det på tide på vanne'
+                      })
 
                     var addclassWrapper = document.querySelector('.timeToWaterThreeNone');
                     addclassWrapper.classList.remove('timeToWaterThreeNone');
                     addclassWrapper.classList.add('timeToWaterThree');
 
-                    document.querySelector('.startWateringThree').innerHTML = "På tide å vanne"; 
+                    document.getElementById('timeToWaterTextThree').innerHTML = "På tide å vanne"; 
 
-                    
-                    var removeButton = document.querySelector('.startWateringThree'); 
-        
+                    var removeButton = document.querySelector('.startWateringThree');
+
                     removeButton.addEventListener('click', hide); 
-        
+
                     function hide (event){
-        
                     var addClass = document.querySelector('.wrapper');
                     addClass.classList.add('hidden');
         
                     var addClassTwo = document.querySelector('.add'); 
-                    addClassTwo.classList.add('hidden');    
-                    
+                    addClassTwo.classList.add('hidden');  
 
                 }
+
+              }
         }
-                  
-        setInterval(timeIt, 1000);     
-
+        setInterval(timeItTest, 1000);
     }
-}
-
+ 
 }
