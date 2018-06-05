@@ -195,22 +195,30 @@ input {
    
 }
 .startWateringOne{
-    font-size: 15px; 
+    font-size: 25px; 
     text-decoration: underline; 
     letter-spacing: 1.5px;  
 }
-
+.startWateringOne:hover{
+   cursor: pointer; 
+}
 .startWateringTwo{
-    font-size: 15px; 
+    font-size: 25px; 
     text-decoration: underline;
     letter-spacing: 1.5px; 
 }
+.startWateringTwo:hover{
+    cursor: pointer; 
+ }
 
 .startWateringThree{
-    font-size: 15px; 
+    font-size: 25px; 
     text-decoration: underline;
     letter-spacing: 1.5px; 
 }
+.startWateringThree:hover{
+    cursor: pointer; 
+ }
 .startWateringOneOff {
     display: none; 
 }
@@ -277,7 +285,6 @@ input {
 
 .form1 {
     display: none; 
-
 }
 
 #timeToWaterTextThree{

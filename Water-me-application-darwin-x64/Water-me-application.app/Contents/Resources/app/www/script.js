@@ -151,7 +151,7 @@ function outputnamethree() {
 
                     counter = 0; 
 
-                    let myNotification = new Notification('Title', {
+                    let myNotification = new Notification('Water Me', {
                         body: 'Nå er det på tide på vanne'
                       })
 
@@ -175,6 +175,7 @@ function outputnamethree() {
                 }
 
               }
+
         }
         setInterval(timeItTest, 1000);
     }
