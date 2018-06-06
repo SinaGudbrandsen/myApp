@@ -357,7 +357,34 @@ input {
     color: #DE8180; 
 }
 
-#timeToWaterTextThree{
+.timeToWaterTextThreeClass{
     font-size: 20px; 
     text-decoration: underline; 
 }
+
+.timeToWaterTextThree:hover{
+    cursor: pointer; 
+}
+
+.timeToWaterTextThreeNone{
+    display: none; 
+}
+
+timeToWaterTextOneClass{
+    font-size: 20px; 
+    text-decoration: underline;
+}
+.timeToWaterTextOneNone{
+    display: none; 
+}
+
+timeToWaterTextTwoClass{
+    font-size: 20px; 
+    text-decoration: underline;
+}
+.timeToWaterTextTwoNone{
+    display: none; 
+}
+
+
+

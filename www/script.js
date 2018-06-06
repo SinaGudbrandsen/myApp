@@ -61,6 +61,20 @@ function outputname() {
 
                     }  
                 }
+                  // remove Time to water button if pushed
+                var removeTimeToWaterButton = document.querySelector('.timeToWaterTextOneClass');
+
+                removeTimeToWaterButton.addEventListener('click', remove);
+
+                function remove (event) {
+          
+                  var removeWaterTimeClass = document.querySelector('.timeToWaterTextOneClass'); 
+                  removeWaterTimeClass.classList.remove('timeToWaterTextOneClass');
+                  removeWaterTimeClass.classList.add('timeToWaterTextOneNone');
+              }
+                
+                
+                
                       
     }
     setInterval(timeIt, 1000); 
@@ -129,6 +143,18 @@ removeInput.classList.add('addPlantsTextFieldOff');
                 }
 
             }
+
+              // remove Time to water button if pushed
+              var removeTimeToWaterButton = document.querySelector('.timeToWaterTextTwoClass');
+
+              removeTimeToWaterButton.addEventListener('click', remove);
+
+              function remove (event) {
+          
+                  var removeWaterTimeClass = document.querySelector('.timeToWaterTextTwoClass'); 
+                  removeWaterTimeClass.classList.remove('timeToWaterTextTwoClass');
+                  removeWaterTimeClass.classList.add('timeToWaterTextTwoNone');
+              }
     }
             
     setInterval(timeIt, 1000); 
@@ -197,6 +223,29 @@ function outputnamethree() {
                         addClassTwo.classList.add('hidden');  
 
                         }
+                  // remove Time to water button if pushed
+               var removeTimeToWaterButton = document.querySelector('.timeToWaterTextThreeClass');
+
+               removeTimeToWaterButton.addEventListener('click', remove);
+
+               function remove (event) {
+           
+                   var removeWaterTimeClass = document.querySelector('.timeToWaterTextThreeClass'); 
+                   removeWaterTimeClass.classList.remove('timeToWaterTextThreeClass');
+                   removeWaterTimeClass.classList.add('timeToWaterTextThreeNone');
+                }  
+               
+               // remove Time to water button if pushed
+               var removeTimeToWaterButton = document.querySelector('.timeToWaterTextThreeClass');
+
+               removeTimeToWaterButton.addEventListener('click', remove);
+
+               function remove (event) {
+           
+                   var removeWaterTimeClass = document.querySelector('.timeToWaterTextThreeClass'); 
+                   removeWaterTimeClass.classList.remove('timeToWaterTextThreeClass');
+                   removeWaterTimeClass.classList.add('timeToWaterTextThreeNone');
+               }        
 
             }
         }
@@ -229,7 +278,7 @@ function outputnamethree() {
 
                 // add circle to 
                 var addclassWrapper = document.querySelector('.timeToWaterThreeNone');
-                addclassWrapper.classList.remove('timeToWaterThreeNone');
+                addclassWrapper.classList.remove('.timeToWaterThreeNone');
                 addclassWrapper.classList.add('timeToWaterThree');
 
                 // add html text to notify user   
@@ -240,7 +289,7 @@ function outputnamethree() {
 
                         removeButton.addEventListener('click', hide); 
 
-                        function hide (event){
+                        function hide(){
                         var addClass = document.querySelector('.wrapper');
                         addClass.classList.add('hidden');
         
@@ -250,6 +299,18 @@ function outputnamethree() {
                         }
 
               }
+
+               // remove Time to water button if pushed
+               var removeTimeToWaterButton = document.querySelector('.timeToWaterTextThreeClass');
+
+               removeTimeToWaterButton.addEventListener('click', remove);
+
+               function remove (event) {
+           
+                   var removeWaterTimeClass = document.querySelector('.timeToWaterTextThreeClass'); 
+                   removeWaterTimeClass.classList.remove('timeToWaterTextThreeClass');
+                   removeWaterTimeClass.classList.add('timeToWaterTextThreeNone');
+               }
 
         }
         setInterval(timeItTest, 1000);

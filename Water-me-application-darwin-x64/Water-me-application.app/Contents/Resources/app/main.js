@@ -19,7 +19,7 @@ var win;
 function createWindow() {
     // Create the browser window.
     win = new BrowserWindow({
-        width: 965,
+        width: 1100,
         height: 800,
         resizable: false
     })
@@ -41,7 +41,7 @@ function createWindow() {
     }));
 
     // Open the DevTools.
-    win.webContents.openDevTools();
+    //win.webContents.openDevTools();
 
     // Emitted when the window is closed.
     win.on('closed', function () {
