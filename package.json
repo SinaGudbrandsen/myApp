@@ -8,8 +8,13 @@
     "url": "https://github.com/SinaGudbrandsen/myApp"
   },
   "scripts": {
+<<<<<<< HEAD
     "start": "electron main.js",
     "pack": "electron-packager . --icon \"app_icons/Icon.icns\" --overwrite"
+=======
+    "start": "electron .",
+    "pack": "electron-packager . --icon \"icon/monsteraleaf.png\" --overwrite"
+>>>>>>> testing
   },
   "author": "Sina Hoelstad Gudbrandsen",
   "license": "MIT",

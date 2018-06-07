@@ -19,19 +19,19 @@ var win;
 function createWindow() {
     // Create the browser window.
     win = new BrowserWindow({
-        width: 965,
+        width: 1100,
         height: 800,
         resizable: false
     })
 
-    /* add Tray icon  
-    var tray = new Tray('Pic/search.png');
+   //add Tray icon  
+    var tray = new Tray("icon/monsteraleaf.png");
     tray.setTitle('hi');
 
     ipcMain.on('update-score', function(event, arg){
 
         tray.setTitle(arg);
-    }); */
+    }); 
 
     // and load the index.html of the app.
     win.loadURL(url.format({
@@ -41,7 +41,7 @@ function createWindow() {
     }));
 
     // Open the DevTools.
-    win.webContents.openDevTools();
+    //win.webContents.openDevTools();
 
     // Emitted when the window is closed.
     win.on('closed', function () {

@@ -4,37 +4,77 @@
 
 body {
     font-family: "Helvetica Neue", sans-serif;  
-    background: #f7f4e6; 
+    background: #fcfbf7; 
     margin: 0 auto; 
     text-align: center;    
     font-size: 60pt;
     font-weight: 600; 
-    color: #f51010; 
+    color: #84A793; 
 }
 
 .container {
     display: flex; 
     flex-direction: row; 
-}
-
-.waterTimes , .namePlant {
-    font-size: 15px; 
-    opacity: 0; 
+    height: 400px; 
 }
 .header {
     font-family: 'futura', sans-serif; 
+    color: #84A793;
     font-size: 40pt; 
     letter-spacing: 4pt; 
     text-align: center; 
     padding-top: 300px; 
-    margin-bottom: 90px;
+    margin-bottom: 50px;
+}
+.infoHeader {
+
+    font-size: 15px; 
+    font-weight: 400; 
+    text-decoration: underline; 
+    padding-bottom: 10px; 
+    letter-spacing: 4px; 
+    font-style: italic; 
+    opacity: 0; 
+
+    animation-name: infoHeader; 
+    animation-duration: 1.5s; 
+    animation-fill-mode: forwards; 
+    animation-delay: 2s; 
+    animation-iteration-count: 1;
 }
 
-.add {
-    font-size: 30px;
-    padding-top: 50px; 
+@keyframes infoHeader{
+
+    from {
+        opacity: 0; 
+        text-align: center; 
+    }
+    to {
+        opacity: 1;
+        text-align: center; 
+          
+    }
+  }
+
+input {
+    outline: none; 
+    border: none; 
+    border-bottom: 2px solid black; 
+    background: none; 
+    margin-bottom: 50px; 
+    font-weight: bold;
+    font-size: 15px; 
+    border-radius: 2px;
+    line-height: 50px;
+    height: 60px;
+    width: 250px;
+    text-align: center;
+    cursor: pointer; 
 }
 
+.addPlantsTextFieldOff{
+    display: none;
+} 
 /* Animating the header*/
 
 .header {
@@ -44,6 +84,7 @@ body {
     animation-delay: 2s; 
     animation-iteration-count: 1;
 }
+
 
 @keyframes headerToTop{
     from {
@@ -57,23 +98,6 @@ body {
     }
   }
 
-.divPlants { 
-    margin: 60px auto; 
-    font-size: 15px; 
-    color: black; 
-    width: 350px; 
-    height: 70px; 
-    border-bottom: 2px solid black; 
-    opacity: 0; 
-}
-.divPlants hidden{
-     display: none;
-}
-
-
-.divPlants p {
-    padding-top: 5px; 
-}
 /* Animating the input field*/
 
 .divPlants{
@@ -90,70 +114,21 @@ body {
         opacity: 0;
     }
     to {
-         
+        
         opacity: 1;
         
     }
 }
-
-/* styling input field*/
-
-.addPlantsTextField {
-   
-    background-image: url(Pic/search.svg); 
-    background-size: 20px 20px; 
-    background-position: 360px 8px; 
-   background-repeat: no-repeat;
-   padding-top: 5px; 
-   border: none; 
-   background-color: #f7f4e6; 
-   outline: none; 
-   width: 300px;
-   height: 30px; 
-   font-size: 15px; 
-   padding-left: 40px; 
-  
-}
-
-.formArea {
-    margin: 0 auto; 
-    font-size: 15px; 
-    color: black; 
-    width: 350px; 
-    height: 70px; 
-    border-bottom: 2px solid black; 
-    opacity: 0;
-    
-}
-.waterAmount2{
-      
-    background-image: url(Pic/search.svg); 
-    background-size: 20px 20px; 
-    background-position: 360px 8px; 
-   background-repeat: no-repeat;
-   padding-top: 5px; 
-   border: none; 
-   background-color: #f7f4e6; 
-   outline: none; 
-   width: 300px;
-   height: 30px; 
-   font-size: 15px; 
-   padding-left: 40px; 
-}
-.divPlants p {
-    padding-top: 5px; 
-    
-}
 /* Animating the input field*/
 
-.formArea , .namePlant , .waterTimes{
+.wrapperCircleOne , .wrapperCircleTwo, .wrapperCircleThree{
     animation-name: addPlantsButton;
     animation-fill-mode: forwards;
     animation-duration: 1.5s; 
     animation-delay: 3s; 
 }
 
-@keyframes formArea{
+@keyframes  wrapperCircleOne{
 
    from {
         
@@ -166,7 +141,7 @@ body {
     }
 }
 
-@keyframes namePlant {
+@keyframes wrapperCircleTwo{
 
     from {
          
@@ -179,7 +154,7 @@ body {
      }
  }
 
- @keyframes waterTimes {
+ @keyframes  wrapperCircleThree {
 
     from {
          
@@ -193,85 +168,222 @@ body {
  }
 .wrapper {
     display: flex; 
-    flex-direction: column; 
-    margin: 0 auto; 
-    width: 400px;  
+    flex-direction: row; 
+    justify-content: center; 
+    margin: 0 auto;  
 }
 
-.wrapper hidden {
-    
+.wrapperCircleOne {
+    color: #fff;
+    position: relative; 
+    margin: 0 75px 0 75px; 
+    width: 200px; 
+    height: 200px;
+    opacity: 0;         
+}
+
+.wrapperCircleTwo {
+    color: #9DCCCF;
+    position: relative; 
+    margin: 0 75px 0 75px; 
+    width: 200px; 
+    height: 300px;
+    opacity: 0;
+}
+.wrapperCircleThree{
+    color:#F2D697;
+    position: relative; 
+    margin: 0 75px 0 75px; 
+    width: 200px; 
+    height: 200px; 
+    opacity: 0; 
+}
+
+.numberOne {
+    margin: 0 auto; 
+    font-size: 15px; 
+    width: 150px; 
+    height: 150px; 
+    border: 1px solid rgb(19, 7, 7);
+    border-color:#DE8180; 
+    border-radius: 50%; 
+    background-color: #DE8180;
+}
+.numberOne p {
+    margin: 2px auto; 
+}
+.numberTwo {
+    color: #fff; 
+    margin: 0 auto; 
+    font-size: 15px; 
+    width: 150px; 
+    height: 150px; 
+    border: 1px solid black;
+    border-color:  #9DCCCF;
+    border-radius: 50%; 
+    background-color: #9DCCCF;
+}
+.numberTwo p {
+    margin: 2px auto; 
+}
+.numberThree {
+    margin:  0 auto;
+    font-size: 10px; 
+    width: 150px; 
+    height: 150px; 
+    border: 1px solid black; 
+    border-color: #F2D697; 
+    border-radius: 50%;
+    background-color: #F2D697;
+   
+}
+.startWateringOne{
+    color: #DE8180;
+    font-size: 25px; 
+    text-decoration: underline; 
+    letter-spacing: 1.5px;  
+}
+.startWateringOne:hover{
+   cursor: pointer; 
+}
+.startWateringTwo{
+    font-size: 25px; 
+    text-decoration: underline;
+    letter-spacing: 1.5px; 
+}
+.startWateringTwo:hover{
+    cursor: pointer; 
+ }
+
+.startWateringThree{
+    font-size: 25px; 
+    text-decoration: underline;
+    letter-spacing: 1.5px; 
+}
+.startWateringThree:hover{
+    cursor: pointer; 
+ }
+.startWateringOneOff {
     display: none; 
 }
 
-.hidden {
-    
+.startWateringTwoOff {
     display: none; 
 }
 
-/* Add new plant button to appear from no display*/
-
-.addNewNoDisplay img {
-    width: 35px;      
-}
-.addNewNoDisplay{
+.startWateringThreeOff {
     display: none; 
 }
 
-.addNew{
-    width: 35px; 
-    margin: 0 auto; 
-
-}
-.addNew img{
-    width: 35px; 
-    margin: 0 auto; 
+.titleOne {
+    color:#DE8180;
+     font-size: 25px; 
+     margin: 50px auto; 
 }
 
-.wrapperPlant{
-    display: flex; 
-    flex-direction: column; 
-    margin: 0 auto; 
-    width: 350px; 
-    height: 300px; 
-    border: 2px solid black; 
-    border-radius: 20px; 
-}
-
-.wrapperPlantNoDisplay { 
-    display: none; 
-}
-
-.wrapperPlantPos2 {
-    display: flex; 
-    flex-direction: column; 
+.titleTwo { 
+    font-size: 25px; 
     margin: 50px auto; 
-    width: 350px; 
-    height: 300px; 
-    border: 2px solid black; 
-    border-radius: 20px; 
 }
 
-.headerPlant {
-    margin: 50px auto; 
-    align-items: center; 
-    font-family: 'futura', sans-serif; 
-    font-size: 15pt; 
-    letter-spacing: 4pt; 
-    text-align: center; 
+.titleThree {
+    font-size: 25px; 
+    margin: 50px auto;  
 }
 
-.headerPlantNoDisplay{
+.timeToWater {
+    position: absolute; 
+    margin: -160px 16px; 
+    width: 170px; 
+    height: 170px; 
+    border: 3px solid black; 
+    border-color: #DE8180;
+    border-radius: 50%; 
+}
+
+.timeToWaterTwo{ 
+    position: absolute; 
+    margin: -160px 16px; 
+    width: 170px; 
+    height: 170px; 
+    border: 3px solid black; 
+    border-color: #9DCCCF;
+    border-radius: 50%;
+}
+.timeToWaterThree {
+    position: absolute; 
+    margin: -160px 16px; 
+    width: 170px; 
+    height: 170px; 
+    border: 3px solid black; 
+    border-color: #F2D697;
+    border-radius: 50%;
+}
+.timeToWaterNone {
+    display: none; 
+}
+.timeToWaterTwoNone{
+    display: none; 
+}
+.timeToWaterThreeNone{
     display: none; 
 }
 
-.infoPlant {
-    margin: 50px auto; 
-    align-items: center; 
-    font-family: 'futura', sans-serif; 
-    font-size: 10pt; 
-    letter-spacing: 1pt; 
-    text-align: center; 
+.waterTimeTwo{
+    font-size: 20px; 
+    text-decoration: underline; 
 }
-.infoPlantNoDisplay {
+
+.oneTime {
+    margin: 0 auto; 
+    font-size: 80px; 
+}
+
+.twoTimes {
+    color: #fff;
+    margin: 0 auto; 
+    font-size: 80px; 
+}
+
+.everyOther {
+    color: #fff; 
+    margin: 40px auto; 
+    font-size: 27px;
+}
+
+.form1 {
+    display: none; 
+    color: #DE8180; 
+}
+
+.timeToWaterTextThreeClass{
+    font-size: 20px; 
+    text-decoration: underline; 
+}
+
+.timeToWaterTextThree:hover{
+    cursor: pointer; 
+}
+
+.timeToWaterTextThreeNone{
     display: none; 
 }
+
+timeToWaterTextOneClass{
+    font-size: 20px; 
+    text-decoration: underline;
+}
+.timeToWaterTextOneNone{
+    display: none; 
+}
+
+timeToWaterTextTwoClass{
+    font-size: 20px; 
+    text-decoration: underline;
+}
+.timeToWaterTextTwoNone{
+    display: none; 
+}
+
+
+
