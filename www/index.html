@@ -27,7 +27,7 @@
                 <p class="titleOne"></p>
                         <form id='form1'>
                                 <br>
-                                <input id ='enter' class="addPlantsTextField" type="text"   autocomplete="off"  placeholder ="Hva heter planten din?" name="addNameOne"><br>  
+                                <input onkeypress="return noenter()" id ='enter1' class="addPlantsTextField" type="text"   autocomplete="off"  placeholder ="Hva heter planten din?" name="addNameOne"><br>  
                         </form>
 
                 <div class="numberOne">
@@ -48,7 +48,7 @@
                  <p class="titleTwo"> </p>
                                 <form id='form2'>
                                          <br>
-                                        <input placeholder ="Hva heter planten din?" autocomplete="off" id ='enter' class="addPlantsTextField" type="text" name="nametwo"><br>  
+                                        <input  onkeypress="return noenter()" placeholder ="Hva heter planten din?" autocomplete="off" id ='enter2' class="addPlantsTextField" type="text" name="nametwo"><br>  
                                 </form>
                 <div class="numberTwo">
                 <p class="twoTimes">2</p><p>ganger i uken</p>
@@ -59,7 +59,7 @@
                 </div>
 
 
-                <p class="startWateringTwo" onclick="outputnametwo()">Start vanningen</p>
+                <p onclick="outputnametwo()" class="startWateringTwo">Start vanningen</p>
 
                 <p id="timeToWaterTextTwo" class="timeToWaterTextTwoClass"></p>
         </div>
@@ -69,7 +69,7 @@
                  <p class="titleThree"> </p>
                         <form id='form3'>
                                  <br>
-                                <input placeholder ="Hva heter planten din?" autocomplete="off" id ='enter1' class="addPlantsTextField" type="text" name="namethree"><br>  
+                                <input onkeypress="return noenter()" placeholder ="Hva heter planten din?" autocomplete="off" id ='enter3' class="addPlantsTextField" type="text" name="namethree"><br>  
                         </form>
                  <div class="numberThree">
                         <p class="everyOther">Annenhver uke</p>

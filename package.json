@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "electron .",
-    "pack": "electron-packager . --icon \"icon/monsteraleaf.png\" --overwrite"
+    "pack": "electron-packager . --icon \"app_icon/Icon.icns\" --overwrite"
   },
   "author": "Sina Hoelstad Gudbrandsen",
   "license": "MIT",

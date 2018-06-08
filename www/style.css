@@ -263,6 +263,11 @@ input {
 .startWateringThree:hover{
     cursor: pointer; 
  }
+
+ .startWateringThreeOff {
+    display: none; 
+}
+
 .startWateringOneOff {
     display: none; 
 }
@@ -271,9 +276,6 @@ input {
     display: none; 
 }
 
-.startWateringThreeOff {
-    display: none; 
-}
 
 .titleOne {
     color:#DE8180;
@@ -361,7 +363,7 @@ input {
     text-decoration: underline; 
 }
 
-.timeToWaterTextThree:hover{
+.timeToWaterTextThreeClass:hover{
     cursor: pointer; 
 }
 

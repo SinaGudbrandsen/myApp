@@ -25,7 +25,7 @@ function createWindow() {
     })
 
    //add Tray icon  
-    var tray = new Tray("icon/monsteraleaf.png");
+   var tray = new Tray('app_icon/monsteraleaf.png');
     tray.setTitle('hi');
 
     ipcMain.on('update-score', function(event, arg){

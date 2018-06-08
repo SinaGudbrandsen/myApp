@@ -1,5 +1,8 @@
-// function start watering on circle number one
+// prevent key 13/enter from startin page over
+function noenter() {
+    return !(window.event && window.event.keyCode == 13); }
 
+// function start watering on circle number one
 function outputname() {
     
 // name input
@@ -47,39 +50,28 @@ function outputname() {
                 addclassWrapper.classList.remove('timeToWaterNone');
                 addclassWrapper.classList.add('timeToWater');
 
-                // remove start watering button when hit
-                var removeButton = document.querySelector('.startWateringOne');
+               // remove Time to water button if pushed
+               var removeTimeToWaterButton = document.querySelector('.timeToWaterTextClass');
+               removeTimeToWaterButton.addEventListener('click', remove);
 
-                removeButton.addEventListener('click', hide); 
-
-                function hide (event){
-                    var addClass = document.querySelector('.wrapper');
-                    addClass.classList.add('hidden');
-
-                    var addClassTwo = document.querySelector('.add'); 
-                    addClassTwo.classList.add('hidden');  
-
-                    }  
-                }
-                  // remove Time to water button if pushed
-                var removeTimeToWaterButton = document.querySelector('.timeToWaterTextOneClass');
-
-                removeTimeToWaterButton.addEventListener('click', remove);
-
-                function remove (event) {
+               function remove (event) {
           
-                  var removeWaterTimeClass = document.querySelector('.timeToWaterTextOneClass'); 
-                  removeWaterTimeClass.classList.remove('timeToWaterTextOneClass');
-                  removeWaterTimeClass.classList.add('timeToWaterTextOneNone');
-              }
-                
-                
+                   var removeWaterTimeClass = document.querySelector('.timeToWaterTextOneClass'); 
+                   removeWaterTimeClass.classList.remove('timeToWaterTextOneClass');
+                   removeWaterTimeClass.classList.add('timeToWaterTextOneNone');
+
+                    var removeRing = document.querySelector('.timeToWater'); 
+                   removeRing.classList.remove('timeToWater'); 
+                   removeRing.classList.add('timeToWaterNone');
+               }
                 
                       
     }
     setInterval(timeIt, 1000); 
 } 
     
+
+}
 // function start watering on circle number two
 function outputnametwo() {
 
@@ -128,40 +120,32 @@ removeInput.classList.add('addPlantsTextFieldOff');
                 addclassWrapper.classList.remove('timeToWaterTwoNone');
                 addclassWrapper.classList.add('timeToWaterTwo');
 
-                // Remove start watering button
-                var removeButton = document.querySelector('.startWateringTwo');
 
-                removeButton.addEventListener('click', hide); 
+                 // remove Time to water button if pushed
+                var removeTimeToWaterButton = document.querySelector('.timeToWaterTextTwoClass');
+                removeTimeToWaterButton.addEventListener('click', remove);
 
-                function hide (event){
-                var addClass = document.querySelector('.wrapper');
-                addClass.classList.add('hidden');
+                function remove (event) {
+           
+                    var removeWaterTimeClass = document.querySelector('.timeToWaterTextTwoClass'); 
+                    removeWaterTimeClass.classList.remove('timeToWaterTextTwoClass');
+                    removeWaterTimeClass.classList.add('timeToWaterTextTwoNone');
 
-                var addClassTwo = document.querySelector('.add'); 
-                addClassTwo.classList.add('hidden');  
-
+                     var removeRing = document.querySelector('.timeToWaterTwo'); 
+                    removeRing.classList.remove('timeToWaterTwo'); 
+                    removeRing.classList.add('timeToWaterTwoNone');
                 }
 
             }
 
-              // remove Time to water button if pushed
-              var removeTimeToWaterButton = document.querySelector('.timeToWaterTextTwoClass');
-
-              removeTimeToWaterButton.addEventListener('click', remove);
-
-              function remove (event) {
-          
-                  var removeWaterTimeClass = document.querySelector('.timeToWaterTextTwoClass'); 
-                  removeWaterTimeClass.classList.remove('timeToWaterTextTwoClass');
-                  removeWaterTimeClass.classList.add('timeToWaterTextTwoNone');
-              }
+             
     }
             
     setInterval(timeIt, 1000); 
 
 }   
 
-// function start watering on circle number two
+// function start watering on circle number three
 
 
 function outputnamethree() {
@@ -202,44 +186,17 @@ var counterThree = 0;
             let myNotification = new Notification('Water Me', {
                 body: 'Nå er det på tide på vanne'
             })
+            // add circle to 
+             var addclassWrapper = document.querySelector('.timeToWaterThreeNone');
+            addclassWrapper.classList.remove('timeToWaterThreeNone');
+            addclassWrapper.classList.add('timeToWaterThree');
 
             // Give html new text
             document.getElementById('timeToWaterTextThree').innerHTML = "På tide å vanne"; 
-
-            // add time to water paragraph
-            var addclassWrapper = document.querySelector('.timeToWaterThreeNone');
-            addclassWrapper.classList.remove('timeToWaterThreeone');
-            addclassWrapper.classList.add('timeToWaterThreeTwo');
-
-            // Remove start watering button
-            var removeButton = document.querySelector('.startWateringThree');
-
-            removeButton.addEventListener('click', hide); 
-
-                function hide (event){
-                    var addClass = document.querySelector('.wrapper');
-                    addClass.classList.add('hidden');
-        
-                    var addClassTwo = document.querySelector('.add'); 
-                    addClassTwo.classList.add('hidden');  
-
-                }
-
-             // remove Time to water button if pushed
-            var removeTimeToWaterButton = document.querySelector('.timeToWaterTextThreeClass');
-
-            removeTimeToWaterButton.addEventListener('click', remove);
-
-            function remove (event) {
-           
-                var removeWaterTimeClass = document.querySelector('.timeToWaterTextThreeClass'); 
-                removeWaterTimeClass.classList.remove('timeToWaterTextThreeClass');
-                removeWaterTimeClass.classList.add('timeToWaterTextThreeNone');
-            }  
                
             // remove Time to water button if pushed
+          
             var removeTimeToWaterButton = document.querySelector('.timeToWaterTextThreeClass');
-
             removeTimeToWaterButton.addEventListener('click', remove);
 
             function remove (event) {
@@ -247,7 +204,12 @@ var counterThree = 0;
                 var removeWaterTimeClass = document.querySelector('.timeToWaterTextThreeClass'); 
                 removeWaterTimeClass.classList.remove('timeToWaterTextThreeClass');
                 removeWaterTimeClass.classList.add('timeToWaterTextThreeNone');
-            }        
+
+                var removeRing = document.querySelector('.timeToWaterThree'); 
+                removeRing.classList.remove('timeToWaterThree'); 
+                removeRing.classList.add('timeToWaterThreeNone');
+            }
+               
 
         }
     }
@@ -255,14 +217,12 @@ var counterThree = 0;
 setInterval(timeIt, 1000); 
 
 
-
-
 // Run a tester for 10 seconds to see if timer and class change works
 
 if (t == 'test') {
 
     var counter = 0; 
-    var timeLeftTest = 5;
+    var timeLeftTest = 10;
     
     function timeItTest (){
 
@@ -275,46 +235,37 @@ if (t == 'test') {
             counter = 0; 
 
         // tray notification when counter hits zero    
-        let myNotification = new Notification('Water Me', {
-            body: 'Nå er det på tide på vanne'
-        })
-
+        let myNotification = new Notification('Water Me', { body: 'Nå er det på tide på vanne'})
+    
         // add circle to 
         var addclassWrapper = document.querySelector('.timeToWaterThreeNone');
-        addclassWrapper.classList.remove('.timeToWaterThreeNone');
+        addclassWrapper.classList.remove('timeToWaterThreeNone');
         addclassWrapper.classList.add('timeToWaterThree');
 
         // add html text to notify user   
+
         document.getElementById('timeToWaterTextThree').innerHTML = "På tide å vanne"; 
 
-        // Remove start watering button     
-        var removeButton = document.querySelector('.startWateringThree');
-        removeButton.addEventListener('click', hide); 
+        // remove Time to water button if pushed
+        var removeTimeToWaterButton = document.querySelector('.timeToWaterTextThreeClass');
+        removeTimeToWaterButton.addEventListener('click', remove);
 
-        function hide(){
-            var addClass = document.querySelector('.wrapper');
-            addClass.classList.add('hidden');
-        
-            var addClassTwo = document.querySelector('.add'); 
-            addClassTwo.classList.add('hidden');  
-
-        }
-
-    }
-
-    // remove Time to water button if pushed
-    var removeTimeToWaterButton = document.querySelector('.timeToWaterTextThreeClass');
-    removeTimeToWaterButton.addEventListener('click', remove);
-
-    function remove (event) {
+         function remove (event) {
            
-        var removeWaterTimeClass = document.querySelector('.timeToWaterTextThreeClass'); 
-        removeWaterTimeClass.classList.remove('timeToWaterTextThreeClass');
-        removeWaterTimeClass.classList.add('timeToWaterTextThreeNone');
-    }
+            var removeWaterTimeClass = document.querySelector('.timeToWaterTextThreeClass'); 
+            removeWaterTimeClass.classList.remove('timeToWaterTextThreeClass');
+            removeWaterTimeClass.classList.add('timeToWaterTextThreeNone');
 
-    }
+            var removeRing = document.querySelector('.timeToWaterThree'); 
+            removeRing.classList.remove('timeToWaterThree'); 
+            removeRing.classList.add('timeToWaterThreeNone');
+         }
+    }   
+
+}
         setInterval(timeItTest, 1000);
-    }
+}
  
+
+
 }

@@ -72,7 +72,6 @@ input {
     cursor: pointer; 
 }
 
-
 .addPlantsTextFieldOff{
     display: none;
 } 
@@ -264,6 +263,11 @@ input {
 .startWateringThree:hover{
     cursor: pointer; 
  }
+
+ .startWateringThreeOff {
+    display: none; 
+}
+
 .startWateringOneOff {
     display: none; 
 }
@@ -272,9 +276,6 @@ input {
     display: none; 
 }
 
-.startWateringThreeOff {
-    display: none; 
-}
 
 .titleOne {
     color:#DE8180;
@@ -362,11 +363,29 @@ input {
     text-decoration: underline; 
 }
 
-
-.timeToWaterTextThree:hover{
+.timeToWaterTextThreeClass:hover{
     cursor: pointer; 
 }
 
 .timeToWaterTextThreeNone{
     display: none; 
 }
+
+timeToWaterTextOneClass{
+    font-size: 20px; 
+    text-decoration: underline;
+}
+.timeToWaterTextOneNone{
+    display: none; 
+}
+
+timeToWaterTextTwoClass{
+    font-size: 20px; 
+    text-decoration: underline;
+}
+.timeToWaterTextTwoNone{
+    display: none; 
+}
+
+
+

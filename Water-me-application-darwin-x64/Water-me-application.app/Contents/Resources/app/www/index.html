@@ -12,21 +12,22 @@
 
 <body>
 
-  <h1 class="header">WATER ME</h1>
+<h1 class="header">WATER ME</h1>
 
-  <p class="infoHeader">Legg inn plantene dine og få beskjed da de burde vannes!</p>
+<p class="infoHeader">Legg inn plantene dine og få beskjed da de burde vannes!</p>
     
 <div class='container'>
     
-    
-<div class="wrapper">
+        <div class="wrapper">
 
+
+        <!--Wrapper for Circle One-->
         <div class="wrapperCircleOne"> 
 
                 <p class="titleOne"></p>
                         <form id='form1'>
                                 <br>
-                                <input id ='enter' class="addPlantsTextField" type="text"   autocomplete="off"  placeholder ="Hva heter planten din?" name="addNameOne"><br>  
+                                <input onkeypress="return noenter()" id ='enter1' class="addPlantsTextField" type="text"   autocomplete="off"  placeholder ="Hva heter planten din?" name="addNameOne"><br>  
                         </form>
 
                 <div class="numberOne">
@@ -39,47 +40,50 @@
 
                 <p class="startWateringOne" onclick="outputname()">Start vanningen</p>
 
-                <p id="timeToWaterTextTwo"></p>
+                <p id="timeToWaterTextOne" class="timeToWaterTextOneClass"></p>
         </div> 
 
-        
-    <div class="wrapperCircleTwo">
-                <p class="titleTwo"> </p>
-                         <form id='form2'>
-                                <br>
-                                <input placeholder ="Hva heter planten din?" autocomplete="off" id ='enter' class="addPlantsTextField" type="text" name="nametwo"><br>  
-                        </form>
+        <!--Wrapper for Circle Two-->
+        <div class="wrapperCircleTwo">
+                 <p class="titleTwo"> </p>
+                                <form id='form2'>
+                                         <br>
+                                        <input  onkeypress="return noenter()" placeholder ="Hva heter planten din?" autocomplete="off" id ='enter2' class="addPlantsTextField" type="text" name="nametwo"><br>  
+                                </form>
                 <div class="numberTwo">
-            <p class="twoTimes">2</p><p>ganger i uken</p>
+                <p class="twoTimes">2</p><p>ganger i uken</p>
+                </div>
+
+                <div class="timeToWaterTwoNone">
+                        <p class="waterTimeTwo"></p>
+                </div>
+
+
+                <p onclick="outputnametwo()" class="startWateringTwo">Start vanningen</p>
+
+                <p id="timeToWaterTextTwo" class="timeToWaterTextTwoClass"></p>
         </div>
-        <div class="timeToWaterTwoNone">
-                <p class="waterTimeTwo"></p>
-        </div>
 
-
-        <p class="startWateringTwo" onclick="outputnametwo()">Start vanningen</p>
-
-        <p id="timeToWaterTextTwo"></p>
-    </div>
-
-     
-    <div class="wrapperCircleThree"> 
-                <p class="titleThree"> </p>
-         <form id='form3'>
-                    <br>
-                    <input placeholder ="Hva heter planten din?" autocomplete="off" id ='enter1' class="addPlantsTextField" type="text" name="namethree"><br>  
-        </form>
-        <div class="numberThree">
-            <p class="everyOther">Annenhver uke</p>
-        </div>
+      <!--Wrapper for Circle Three-->
+        <div class="wrapperCircleThree"> 
+                 <p class="titleThree"> </p>
+                        <form id='form3'>
+                                 <br>
+                                <input onkeypress="return noenter()" placeholder ="Hva heter planten din?" autocomplete="off" id ='enter3' class="addPlantsTextField" type="text" name="namethree"><br>  
+                        </form>
+                 <div class="numberThree">
+                        <p class="everyOther">Annenhver uke</p>
+                </div>
         
-        <div class="timeToWaterThreeNone"></div>
+                <div class="timeToWaterThreeNone"></div>
 
-        <p class="startWateringThree" onclick='outputnamethree()'>Start vanningen</p>
+                <p class="startWateringThree" onclick='outputnamethree()'>Start vanningen</p>
 
-        <p id="timeToWaterTextThree" class="timeToWaterTextThreeClass"></p>
+                <p id="timeToWaterTextThree" class="timeToWaterTextThreeClass"></p>
 
-        </div>    
+        </div>   
+        
+        
     </div>    
 </div>
 
