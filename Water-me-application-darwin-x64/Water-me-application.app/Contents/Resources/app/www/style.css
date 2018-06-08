@@ -5,24 +5,33 @@
 body {
     font-family: "Helvetica Neue", sans-serif;  
 <<<<<<< HEAD
+<<<<<<< HEAD
     background: #f7f4e6; 
 =======
     background: #fcfbf7; 
 >>>>>>> testing
+=======
+    background: #fcfbf7; 
+>>>>>>> Testing
     margin: 0 auto; 
     text-align: center;    
     font-size: 60pt;
     font-weight: 600; 
 <<<<<<< HEAD
+<<<<<<< HEAD
     color: #f51010; 
 =======
     color: #84A793; 
 >>>>>>> testing
+=======
+    color: #84A793; 
+>>>>>>> Testing
 }
 
 .container {
     display: flex; 
     flex-direction: row; 
+<<<<<<< HEAD
 <<<<<<< HEAD
 }
 
@@ -33,16 +42,22 @@ body {
 .header {
     font-family: 'futura', sans-serif; 
 =======
+=======
+>>>>>>> Testing
     height: 400px; 
 }
 .header {
     font-family: 'futura', sans-serif; 
     color: #84A793;
+<<<<<<< HEAD
 >>>>>>> testing
+=======
+>>>>>>> Testing
     font-size: 40pt; 
     letter-spacing: 4pt; 
     text-align: center; 
     padding-top: 300px; 
+<<<<<<< HEAD
 <<<<<<< HEAD
     margin-bottom: 90px;
 }
@@ -53,6 +68,8 @@ body {
 }
 
 =======
+=======
+>>>>>>> Testing
     margin-bottom: 50px;
 }
 .infoHeader {
@@ -101,11 +118,17 @@ input {
     cursor: pointer; 
 }
 
+<<<<<<< HEAD
 
 .addPlantsTextFieldOff{
     display: none;
 } 
 >>>>>>> testing
+=======
+.addPlantsTextFieldOff{
+    display: none;
+} 
+>>>>>>> Testing
 /* Animating the header*/
 
 .header {
@@ -117,9 +140,13 @@ input {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> testing
+=======
+
+>>>>>>> Testing
 @keyframes headerToTop{
     from {
         text-align: center; 
@@ -132,6 +159,7 @@ input {
     }
   }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 .divPlants { 
     margin: 60px auto; 
@@ -152,6 +180,8 @@ input {
 }
 =======
 >>>>>>> testing
+=======
+>>>>>>> Testing
 /* Animating the input field*/
 
 .divPlants{
@@ -169,14 +199,19 @@ input {
     }
     to {
 <<<<<<< HEAD
+<<<<<<< HEAD
          
 =======
         
 >>>>>>> testing
+=======
+        
+>>>>>>> Testing
         opacity: 1;
         
     }
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 /* styling input field*/
@@ -235,6 +270,11 @@ input {
 
 .wrapperCircleOne , .wrapperCircleTwo, .wrapperCircleThree{
 >>>>>>> testing
+=======
+/* Animating the input field*/
+
+.wrapperCircleOne , .wrapperCircleTwo, .wrapperCircleThree{
+>>>>>>> Testing
     animation-name: addPlantsButton;
     animation-fill-mode: forwards;
     animation-duration: 1.5s; 
@@ -242,10 +282,14 @@ input {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 @keyframes formArea{
 =======
 @keyframes  wrapperCircleOne{
 >>>>>>> testing
+=======
+@keyframes  wrapperCircleOne{
+>>>>>>> Testing
 
    from {
         
@@ -259,10 +303,14 @@ input {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 @keyframes namePlant {
 =======
 @keyframes wrapperCircleTwo{
 >>>>>>> testing
+=======
+@keyframes wrapperCircleTwo{
+>>>>>>> Testing
 
     from {
          
@@ -276,10 +324,14 @@ input {
  }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
  @keyframes waterTimes {
 =======
  @keyframes  wrapperCircleThree {
 >>>>>>> testing
+=======
+ @keyframes  wrapperCircleThree {
+>>>>>>> Testing
 
     from {
          
@@ -293,6 +345,7 @@ input {
  }
 .wrapper {
     display: flex; 
+<<<<<<< HEAD
 <<<<<<< HEAD
     flex-direction: column; 
     margin: 0 auto; 
@@ -375,6 +428,8 @@ input {
 }
 .infoPlantNoDisplay {
 =======
+=======
+>>>>>>> Testing
     flex-direction: row; 
     justify-content: center; 
     margin: 0 auto;  
@@ -470,6 +525,7 @@ input {
 .startWateringThree:hover{
     cursor: pointer; 
  }
+<<<<<<< HEAD
 .startWateringOneOff {
     display: none; 
 }
@@ -482,6 +538,22 @@ input {
     display: none; 
 }
 
+=======
+
+ .startWateringThreeOff {
+    display: none; 
+}
+
+.startWateringOneOff {
+    display: none; 
+}
+
+.startWateringTwoOff {
+    display: none; 
+}
+
+
+>>>>>>> Testing
 .titleOne {
     color:#DE8180;
      font-size: 25px; 
@@ -568,12 +640,40 @@ input {
     text-decoration: underline; 
 }
 
+<<<<<<< HEAD
 
 .timeToWaterTextThree:hover{
+=======
+.timeToWaterTextThreeClass:hover{
+>>>>>>> Testing
     cursor: pointer; 
 }
 
 .timeToWaterTextThreeNone{
+<<<<<<< HEAD
 >>>>>>> testing
     display: none; 
 }
+=======
+    display: none; 
+}
+
+timeToWaterTextOneClass{
+    font-size: 20px; 
+    text-decoration: underline;
+}
+.timeToWaterTextOneNone{
+    display: none; 
+}
+
+timeToWaterTextTwoClass{
+    font-size: 20px; 
+    text-decoration: underline;
+}
+.timeToWaterTextTwoNone{
+    display: none; 
+}
+
+
+
+>>>>>>> Testing

@@ -13,6 +13,7 @@
 <body>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     <h1 class="header">WATER ME</h1>
     
 <div class='container'>
@@ -77,12 +78,28 @@
     
 <div class="wrapper">
 
+=======
+<h1 class="header">WATER ME</h1>
+
+<p class="infoHeader">Legg inn plantene dine og få beskjed da de burde vannes!</p>
+    
+<div class='container'>
+    
+        <div class="wrapper">
+
+
+        <!--Wrapper for Circle One-->
+>>>>>>> Testing
         <div class="wrapperCircleOne"> 
 
                 <p class="titleOne"></p>
                         <form id='form1'>
                                 <br>
+<<<<<<< HEAD
                                 <input id ='enter' class="addPlantsTextField" type="text"   autocomplete="off"  placeholder ="Hva heter planten din?" name="addNameOne"><br>  
+=======
+                                <input onkeypress="return noenter()" id ='enter1' class="addPlantsTextField" type="text"   autocomplete="off"  placeholder ="Hva heter planten din?" name="addNameOne"><br>  
+>>>>>>> Testing
                         </form>
 
                 <div class="numberOne">
@@ -95,6 +112,7 @@
 
                 <p class="startWateringOne" onclick="outputname()">Start vanningen</p>
 
+<<<<<<< HEAD
                 <p id="timeToWaterTextTwo"></p>
         </div> 
 
@@ -140,6 +158,55 @@
 </div>
 
 >>>>>>> testing
+=======
+                <p id="timeToWaterTextOne" class="timeToWaterTextOneClass"></p>
+        </div> 
+
+        <!--Wrapper for Circle Two-->
+        <div class="wrapperCircleTwo">
+                 <p class="titleTwo"> </p>
+                                <form id='form2'>
+                                         <br>
+                                        <input  onkeypress="return noenter()" placeholder ="Hva heter planten din?" autocomplete="off" id ='enter2' class="addPlantsTextField" type="text" name="nametwo"><br>  
+                                </form>
+                <div class="numberTwo">
+                <p class="twoTimes">2</p><p>ganger i uken</p>
+                </div>
+
+                <div class="timeToWaterTwoNone">
+                        <p class="waterTimeTwo"></p>
+                </div>
+
+
+                <p onclick="outputnametwo()" class="startWateringTwo">Start vanningen</p>
+
+                <p id="timeToWaterTextTwo" class="timeToWaterTextTwoClass"></p>
+        </div>
+
+      <!--Wrapper for Circle Three-->
+        <div class="wrapperCircleThree"> 
+                 <p class="titleThree"> </p>
+                        <form id='form3'>
+                                 <br>
+                                <input onkeypress="return noenter()" placeholder ="Hva heter planten din?" autocomplete="off" id ='enter3' class="addPlantsTextField" type="text" name="namethree"><br>  
+                        </form>
+                 <div class="numberThree">
+                        <p class="everyOther">Annenhver uke</p>
+                </div>
+        
+                <div class="timeToWaterThreeNone"></div>
+
+                <p class="startWateringThree" onclick='outputnamethree()'>Start vanningen</p>
+
+                <p id="timeToWaterTextThree" class="timeToWaterTextThreeClass"></p>
+
+        </div>   
+        
+        
+    </div>    
+</div>
+
+>>>>>>> Testing
         <script src="script.js"></script>
 
 </body>

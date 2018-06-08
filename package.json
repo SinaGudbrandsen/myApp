@@ -9,12 +9,17 @@
   },
   "scripts": {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "start": "electron main.js",
     "pack": "electron-packager . --icon \"app_icons/Icon.icns\" --overwrite"
 =======
     "start": "electron .",
     "pack": "electron-packager . --icon \"icon/monsteraleaf.png\" --overwrite"
 >>>>>>> testing
+=======
+    "start": "electron .",
+    "pack": "electron-packager . --icon \"app_icon/Icon.icns\" --overwrite"
+>>>>>>> Testing
   },
   "author": "Sina Hoelstad Gudbrandsen",
   "license": "MIT",
